@@ -1,0 +1,113 @@
+.members {
+  background-color: $secondary-background;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+}
+.members__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.members__card {
+  background-color: $primary-white;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    max-height: 622px;
+    height: 100%;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 15px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-right: 0;
+    margin-bottom: 0;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+.members__picture {
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+}
+.members__name {
+  color: $primary-black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+.members__position {
+  color: $secondary-black;
+  margin-bottom: 16px;
+}
+.members__sm-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 24px;
+  }
+}
+.members__sm-item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.members__sm-link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: border-radius $timing-function, background-color $timing-function;
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}
+.members__sm-icon {
+  width: 20px;
+  height: 20px;
+  fill: $sm-icon-color;
+  transition: fill $timing-function;
+  .members__sm-link:hover &,
+  .members__sm-link:focus & {
+    fill: $primary-white;
+  }
+}

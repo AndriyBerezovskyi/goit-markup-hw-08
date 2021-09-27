@@ -1,0 +1,22 @@
+.logo {
+  color: $accent-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: $secondary-font;
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+.header__logo {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  color: $primary-black;
+}
+.footer__logo {
+  color: $primary-white;
+}
