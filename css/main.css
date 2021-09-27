@@ -625,6 +625,13 @@ textarea {
   display: flex;
 }
 
+@media screen and (max-width: 400px) {
+  .mobile-menu__sm-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .mobile-menu__sm-item {
   margin-right: 10px;
 }
@@ -1870,7 +1877,6 @@ textarea {
 }
 
 .projects__card {
-  margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
 }
@@ -1878,6 +1884,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .projects__card {
     width: calc((100% - 30px) / 2);
+    margin-right: 30px;
   }
   .projects__card:nth-last-child(-n) {
     margin-bottom: 0;

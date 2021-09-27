@@ -10,7 +10,6 @@
   }
 }
 .projects__card {
-  margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid rgba(238, 238, 238, 1);
   // &:nth-child(3n) {
@@ -24,6 +23,7 @@
   // }
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
+    margin-right: 30px;
     &:nth-last-child(-n) {
       margin-bottom: 0;
     }

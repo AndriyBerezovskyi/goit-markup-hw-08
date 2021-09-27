@@ -182,6 +182,9 @@
 }
 .mobile-menu__sm-list {
   display: flex;
+  @media screen and (max-width: 400px) {
+    flex-wrap: wrap;
+  }
 }
 .mobile-menu__sm-item {
   margin-right: 10px;
