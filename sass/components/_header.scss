@@ -135,7 +135,9 @@
   background-color: $primary-white;
   transform: translateX(100%);
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transform: translateX(0);
   }
   @media screen and (min-width: 768px) {
@@ -162,7 +164,7 @@
   padding-bottom: 32px;
   font-size: 40px;
   &:last-child {
-    padding-bottom: 302px;
+    padding-bottom: 0;
   }
 }
 .mobile-menu__contacts-item {
