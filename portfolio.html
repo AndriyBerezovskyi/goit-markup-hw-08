@@ -25,7 +25,8 @@
                     Web<span class="header__logo">Studio</span></a>
     
                 <ul class="header__site-nav list">
-                    <li class="header__site-item"><a href="./index.html" class="link header__link">Студия</a></li>
+                    <li class="header__site-item"><a href="./index.html"
+                            class="link header__link">Студия</a></li>
                     <li class="header__site-item"><a href="./portfolio.html" class="link header__link header__current">Портфолио</a></li>
                     <li class="header__site-item"><a href="" class="link header__link">Контакты</a></li>
                 </ul>
@@ -54,7 +55,7 @@
                     <use class="mobile-menu__icon-open" href="./images/sprite-menu.svg#menu"></use>
                 </svg>
             </button>
-            <div class="mobile-menu container js-menu-container" id="mobile-menu">
+            <div class="mobile-menu js-menu-container" id="mobile-menu">
                 <button type="button" class="mobile-menu__button js-close-menu" aria-controls="mobile-menu"
                     aria-expanded="false">
                     <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -64,40 +65,42 @@
                 <div class="mobile-menu__nav">
                     <ul class="mobile-menu__nav-list list">
                         <li class="mobile-menu__nav-item"><a href="./index.html"
-                                class="link header__link">Студия</a></li>
-                        <li class="mobile-menu__nav-item"><a href="./portfolio.html" class="link header__link header__current">Портфолио</a>
+                                class="link header__link header__current">Студия</a></li>
+                        <li class="mobile-menu__nav-item"><a href="./portfolio.html" class="link header__link">Портфолио</a>
                         </li>
                         <li class="mobile-menu__nav-item"><a href="" class="link header__link">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="mobile-menu__contacts">
-                    <ul class="mobile-menu__contacts-list list">
-                        <li class="mobile-menu__contacts-item">
-                            <a href="tel:+380961111111" class="mobile-menu__tel link">
-                                <span>+38 096 111 11 11</span>
-                            </a>
+                <div class="mobile-menu__contacts-box">
+                    <div class="mobile-menu__contacts">
+                        <ul class="mobile-menu__contacts-list list">
+                            <li class="mobile-menu__contacts-item">
+                                <a href="tel:+380961111111" class="mobile-menu__tel link">
+                                    <span>+38 096 111 11 11</span>
+                                </a>
+                            </li>
+                            <li class="mobile-menu__contacts-item">
+                                <a href="mailto:info@devstudio.com" class="mobile-menu__email link">
+                                    <span>info@devstudio.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="mobile-menu__sm-list list">
+                        <li class="mobile-menu__sm-item">
+                            <a href="" class="mobile-menu__sm-link link">Instagram</a>
                         </li>
-                        <li class="mobile-menu__contacts-item">
-                            <a href="mailto:info@devstudio.com" class="mobile-menu__email link">
-                                <span>info@devstudio.com</span>
-                            </a>
+                        <li class="mobile-menu__sm-item">
+                            <a href="" class="mobile-menu__sm-link link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__sm-item">
+                            <a href="" class="mobile-menu__sm-link link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__sm-item">
+                            <a href="" class="mobile-menu__sm-link link">Linkedin</a>
                         </li>
                     </ul>
                 </div>
-                <ul class="mobile-menu__sm-list list">
-                    <li class="mobile-menu__sm-item">
-                        <a href="" class="mobile-menu__sm-link link">Instagram</a>
-                    </li>
-                    <li class="mobile-menu__sm-item">
-                        <a href="" class="mobile-menu__sm-link link">Twitter</a>
-                    </li>
-                    <li class="mobile-menu__sm-item">
-                        <a href="" class="mobile-menu__sm-link link">Facebook</a>
-                    </li>
-                    <li class="mobile-menu__sm-item">
-                        <a href="" class="mobile-menu__sm-link link">Linkedin</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </header>
@@ -165,8 +168,7 @@
                         <a href="" class="projects__link link">
                             <div class="projects__card-overlay">
                                 <img 
-                                srcset="./images/project3-370.jpg,
-                                ./images/project3-354.jpg 354w,
+                                srcset="./images/project3-354.jpg 354w,
                                 ./images/project3-370.jpg 370w,
                                 ./images/project3-450.jpg 450w,
                                 ./images/project3-708.jpg 708w,
